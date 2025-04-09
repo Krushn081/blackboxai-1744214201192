@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Plans - FitFinder</title>
+    <meta name="description" content="Choose the perfect FitFinder membership plan for your fitness needs">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .pricing-card {
+            transition: all 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .popular-badge {
+            top: -15px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-blue-600">FitFinder</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a>
+                    <a href="how-it-works.html" class="text-gray-600 hover:text-blue-600 transition">How It Works</a>
+                    <a href="membership.html" class="text-blue-600 font-medium">Membership</a>
+                    <a href="register.html" class="text-gray-600 hover:text-blue-600 transition">Register</a>
+                    <a href="login.html" class="text-gray-600 hover:text-blue-600 transition">Login</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Pricing Header -->
+        <section class="py-16 px-4 bg-gradient-to-r from-blue-500 to-green-500 text-white">
+            <div class="container mx-auto text-center">
+                <h1 class="text-4xl font-bold mb-4">Flexible Membership Plans</h1>
+                <p class="text-xl max-w-2xl mx-auto">Choose the plan that fits your fitness journey. No long-term contracts, cancel anytime.</p>
+            </div>
+        </section>
+
+        <!-- Pricing Plans -->
+        <section class="py-16 px-4">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Pay-Per-Session -->
+                    <div class="pricing-card bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Pay-Per-Session</h3>
+                            <p class="text-gray-600 mb-6">Perfect for occasional fitness enthusiasts</p>
+                            <div class="text-4xl font-bold mb-6">$15<span class="text-lg text-gray-500">/session</span></div>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>No membership fees</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Book individual sessions</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Flexible scheduling</span>
+                                </li>
+                                <li class="flex items-center text-gray-400">
+                                    <i class="fas fa-times text-red-400 mr-2"></i>
+                                    <span>No discounts</span>
+                                </li>
+                            </ul>
+                            <a href="register.html" class="block w-full bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded text-center hover:bg-gray-300 transition">Get Started</a>
+                        </div>
+                    </div>
+
+                    <!-- Monthly Plan -->
+                    <div class="pricing-card bg-white rounded-lg shadow-lg overflow-hidden relative border-2 border-blue-500">
+                        <div class="absolute bg-blue-500 text-white text-sm font-bold px-4 py-1 rounded-full popular-badge">MOST POPULAR</div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Monthly Plan</h3>
+                            <p class="text-gray-600 mb-6">Ideal for regular fitness routines</p>
+                            <div class="text-4xl font-bold mb-6">$99<span class="text-lg text-gray-500">/month</span></div>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>10 sessions included</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Additional sessions at $8 each</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Priority booking</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Free cancellation</span>
+                                </li>
+                            </ul>
+                            <a href="register.html" class="block w-full bg-blue-500 text-white font-semibold py-3 px-4 rounded text-center hover:bg-blue-600 transition">Get Started</a>
+                        </div>
+                    </div>
+
+                    <!-- Lifetime Membership -->
+                    <div class="pricing-card bg-white rounded-lg shadow-md overflow-hidden relative">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold mb-2">Lifetime</h3>
+                            <p class="text-gray-600 mb-6">For dedicated fitness lovers</p>
+                            <div class="text-4xl font-bold mb-6">$999<span class="text-lg text-gray-500">/one-time</span></div>
+                            <ul class="space-y-3 mb-8">
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Unlimited sessions</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>VIP access to all classes</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Personal concierge</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-check text-green-500 mr-2"></i>
+                                    <span>Exclusive member events</span>
+                                </li>
+                            </ul>
+                            <a href="register.html" class="block w-full bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded text-center hover:bg-gray-300 transition">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="max-w-3xl mx-auto mt-16">
+                    <h2 class="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
+                    <div class="space-y-4">
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <h3 class="font-semibold text-lg">Can I switch between plans?</h3>
+                            <p class="mt-2 text-gray-600">Yes, you can upgrade or downgrade your plan at any time. Changes will take effect at the start of your next billing cycle.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <h3 class="font-semibold text-lg">Are there any cancellation fees?</h3>
+                            <p class="mt-2 text-gray-600">No, you can cancel your membership anytime without any fees. We'll refund any unused portion of your current billing period.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <h3 class="font-semibold text-lg">Do you offer corporate memberships?</h3>
+                            <p class="mt-2 text-gray-600">Yes! We offer special discounted rates for companies looking to provide fitness benefits to their employees. Contact us for details.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">FitFinder</h3>
+                    <p>Find your perfect fitness destination wherever you are.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-blue-400 transition">Home</a></li>
+                        <li><a href="how-it-works.html" class="hover:text-blue-400 transition">How It Works</a></li>
+                        <li><a href="membership.html" class="hover:text-blue-400 transition">Membership</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-400 transition">About Us</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="mt-4">
+                        <a href="tel:+1234567890" class="flex items-center hover:text-blue-400 transition">
+                            <i class="fas fa-phone-alt mr-2"></i> +1 (234) 567-890
+                        </a>
+                        <a href="mailto:info@fitfinder.com" class="flex items-center hover:text-blue-400 transition mt-2">
+                            <i class="fas fa-envelope mr-2"></i> info@fitfinder.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2025 FitFinder. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
